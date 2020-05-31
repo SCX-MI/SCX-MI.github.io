@@ -501,13 +501,13 @@
 
 		//Create gitalk
 		let gitalk = new Gitalk({
-			clientID: '3a7c30d19fdf1882ada8',
-			clientSecret: 'b164122a122dac959218a406047ad586f53debc9',
+			clientID: 'a056b68bafeebf2672f0',
+			clientSecret: 'e91fe5d5370e296bc856fbc57a1c7b6bfe865a2f',
 			//id: window.location.pathname,
 			//id: decodeURI(window.location.pathname),
 			//id: (window.location.pathname).split("/").pop().substring(0, 49),
 			id: decodeURI( md5( location.href.trimEnd('#.*$,\\?.*$,index.html$') ) ),
-			repo: 'Blog-comment',
+			repo: 'gitalk',
 			owner: 'SCX-MI',
 			admin: 'SCX-MI',
 			distractionFreeMode: 'true',
