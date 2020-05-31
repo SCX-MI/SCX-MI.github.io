@@ -8,22 +8,34 @@
       <link href="/2020/05/31/PicGo%E4%B8%8A%E4%BC%A0%E5%9B%BE%E7%89%87/"/>
       <url>/2020/05/31/PicGo%E4%B8%8A%E4%BC%A0%E5%9B%BE%E7%89%87/</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<h1 id="超简单的利用-GitHub-PicGo搭建属于自己的图床"><a href="#超简单的利用-GitHub-PicGo搭建属于自己的图床" class="headerlink" title="超简单的利用 GitHub + PicGo搭建属于自己的图床"></a>超简单的利用 GitHub + PicGo搭建属于自己的图床</h1><h5 id="1-软件下载地址"><a href="#1-软件下载地址" class="headerlink" title="1.软件下载地址"></a>1.软件下载地址</h5><h5 id="2-GitHub"><a href="#2-GitHub" class="headerlink" title="2.GitHub"></a>2.GitHub</h5><p>​          2.1 创建图库<br>​           2.2 获取令牌</p><h5 id="3-本地配置步骤"><a href="#3-本地配置步骤" class="headerlink" title="3.本地配置步骤"></a>3.本地配置步骤</h5><p>​        3.1 安装配置PicGo<br>​        3.2 测试PicGo</p><h1 id="利用-GitHub-PicGo搭建属于自己的图床"><a href="#利用-GitHub-PicGo搭建属于自己的图床" class="headerlink" title="利用 GitHub + PicGo搭建属于自己的图床"></a>利用 GitHub + PicGo搭建属于自己的图床</h1><h3 id="1-软件下载地址-1"><a href="#1-软件下载地址-1" class="headerlink" title="1.软件下载地址"></a>1.软件下载地址</h3><p>PicGo 蓝奏云下载地址：<a href="https://www.lanzous.com/ia49ojg" target="_blank" rel="noopener">PicGo</a></p><p>Typora 官网：<a href="https://typora.io/" target="_blank" rel="noopener">Typora</a></p><h3 id="2-GitHub-1"><a href="#2-GitHub-1" class="headerlink" title="2.GitHub"></a>2.GitHub</h3><h4 id="2-1-创建图库"><a href="#2-1-创建图库" class="headerlink" title="2.1 创建图库"></a>2.1 创建图库</h4><p><img src="https://raw.githubusercontent.com/SCX-MI/tu-BED/master/20200531235634.jpg" alt="1"></p><h4 id="2-2-获取令牌"><a href="#2-2-获取令牌" class="headerlink" title="2.2 获取令牌"></a>2.2 获取令牌</h4><p>大致步骤如下：</p><p>点击自己的 GitHub 头像</p><p>Settings</p><p>Developer settings</p><p>Personal access tokens</p><p>Generate new token</p><p>之后会有这个界面，自己填选，Note注明给谁用，全部勾选<br><img src="https://raw.githubusercontent.com/SCX-MI/tu-BED/master/20200531235626.jpg" alt="2"></p><p>生成token</p><p>此时可以保存备用，也可以在下边用到的时候，再按照上述步骤生成 token 。注意 token 是私密的，需要做好安全保护！</p><h3 id="3-本地配置步骤-1"><a href="#3-本地配置步骤-1" class="headerlink" title="3.本地配置步骤"></a>3.本地配置步骤</h3><h4 id="3-1-安装配置PicGo"><a href="#3-1-安装配置PicGo" class="headerlink" title="3.1 安装配置PicGo"></a>3.1 安装配置PicGo</h4><p>接下来配置 GitHub 作为图床，在左侧找到图床设置，找到GitHub图床。<br>1、前边有星号的为必填项，依次填入之前创建的仓库名，注意是：账户名/仓库名；<br>2、然后填入设定的分支名（创建仓库时如果没有创建其他分支，默认就是 master 分支）；<br>3、最后填入之前生成的 token 令牌，点击确定</p><p><img src="https://raw.githubusercontent.com/SCX-MI/tu-BED/master/20200531235756.jpg" alt="3"></p><p>4、然后找到 PicGo 设置，打开里边的 <strong><em>时间戳重命名</em></strong>，这样可以避免图床在上传文件时，由于文件名相同造成的错误。</p><p>5、然后剩下的配置项可以不用管，参考的文章不建议设置为开机自启，因为等会配置好 typora 后，typora 在上传图片时会自动打开 PicGo 软件。</p>]]></content>
       
       
+      
+        <tags>
+            
+            <tag> Hexo </tag>
+            
+        </tags>
       
     </entry>
     
     
     
     <entry>
-      <title>t</title>
-      <link href="/2020/05/27/t/"/>
-      <url>/2020/05/27/t/</url>
+      <title>Hexo再加速</title>
+      <link href="/2020/05/30/Hexo%E5%86%8D%E5%8A%A0%E9%80%9F/"/>
+      <url>/2020/05/30/Hexo%E5%86%8D%E5%8A%A0%E9%80%9F/</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<p>通过Github的Github Page作为博客服务器，然后在腾讯云上购买域名，最后将两者绑定。</p><h1 id="操作流程"><a href="#操作流程" class="headerlink" title="操作流程"></a>操作流程</h1><p>1、注册github账号，假设账号名为XXXX。新建一个仓库，命名为XXXX.github.io（只有当命名为此种格式时，Github才会将其设置为Github Page）;<br>2、 在仓库中添加两个文件CNAME（必须大写且无后缀，CNAME文件是用于设置域名的文件）和index.html（网页主文件）。</p><p>CNAME文件中只需要一行即可。假设域名为xxxx.cn<br>3、在腾讯云上申请域名，选择合适的域名购买后（不同的后缀价格差别较大，如果没有特殊需求，选择最合适的即可，此处申请xxxx.cn）<br>4、实名认证，现在在国内购买的域名都需要实名认证，否则将无法使用。实名认证需要上传身份证照片等等信息。<br>5、配置DNS，确认DNS是解析正常的状态。（一定要保证解释状态是正常解析，否则需要重新设置DNS（等待时间很长，官方说0-72小</p><p><img src="https://raw.githubusercontent.com/SCX-MI/tu-BED/master/20200601002457.png" alt="1"></p><p>6、 添加解析，分别添加两条解析，其格式如下（此处我们统一使用CNAME配置解析，有些博客也推荐A配置（记录值是IP，但是github.io的IP可能会改变，所有不推荐），不是很推荐）</p><p><img src="https://raw.githubusercontent.com/SCX-MI/tu-BED/master/20200601002522.png" alt="2"></p><p>7、设置解析任务后，大概需要等待十分钟就可以正常访问了。</p><p>注意：<br>问题一：是否需要备案？<br>如果仅仅是Github网页做后台，是不用备案的。备案的网站主要是指在中国大陆开展网站服务的网站，由于我们使用的是国外的服务器，所以暂时是不需要备案的。但是依旧要注意网页的使用，避免非法信息的传播。</p>]]></content>
       
       
+      
+        <tags>
+            
+            <tag> hexo </tag>
+            
+        </tags>
       
     </entry>
     

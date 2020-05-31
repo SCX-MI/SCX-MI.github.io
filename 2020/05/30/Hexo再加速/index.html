@@ -13,7 +13,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
   <title>
     
-      t | Hexo
+      Hexo再加速 | Hexo
     
   </title>
   <meta name="author" content="SCX">
@@ -89,7 +89,7 @@
 	<!-- Page title -->
 	<p>
 		
-			「t」
+			「Hexo再加速」
 		
 	</p>
 
@@ -220,14 +220,27 @@
 		插件作者：KELEN
 		插件来源: https://github.com/KELEN/katelog
 -->
+
+	
+		<div class="layout-toc">
+			<div id="layout-toc">
+				<div class="k-catelog-list" id="catelog-list" data-title="文章目录"></div>
+			</div>
+		</div>
+
+		
+<script src="/plugin/toc/katelog.min.js"></script>
+
+
+		
 	 
 
 <div class="layout-post">
 	<div id="layout-post">
 		<div class="article-title">
 			
-	<a href="/2020/05/27/t/" itemprop="url">
-		t
+	<a href="/2020/05/30/Hexo%E5%86%8D%E5%8A%A0%E9%80%9F/" itemprop="url">
+		Hexo再加速
 	</a>
 
 		</div>
@@ -243,9 +256,9 @@
 
 	更新于
 
-	<a href="/2020/05/27/t/" itemprop="url">
-		<time datetime="2020-05-27T13:04:18.000Z" itemprop="dateUpdated">
-	  		2020-05-27
+	<a href="/2020/05/30/Hexo%E5%86%8D%E5%8A%A0%E9%80%9F/" itemprop="url">
+		<time datetime="2020-05-30T01:05:38.000Z" itemprop="dateUpdated">
+	  		2020-06-01
 	  </time>
 	</a> 
 
@@ -253,13 +266,20 @@
 
 			</span>
 			<span>
-						
+				
+	<i class="icon-price-tags"></i>
+	
+		<a href="/tags/hexo/" class=" ">
+			hexo
+		</a>
+	
+		
 			</span>
 			
 			
 
 	
-    <span class="leancloud_visitors" id="/2020/05/27/t/_visitors" data-url="/2020/05/27/t/" data-title="t">
+    <span class="leancloud_visitors" id="/2020/05/30/Hexo%E5%86%8D%E5%8A%A0%E9%80%9F/_visitors" data-url="/2020/05/30/Hexo%E5%86%8D%E5%8A%A0%E9%80%9F/" data-title="Hexo再加速">
        	<i class="icon-eye"></i>
        	热度
         
@@ -271,7 +291,7 @@
 
 
 	
-    <span class="leancloud_likes" id="/2020/05/27/t/_likes" data-url="/2020/05/27/t/" data-title="t" rel="unlike">
+    <span class="leancloud_likes" id="/2020/05/30/Hexo%E5%86%8D%E5%8A%A0%E9%80%9F/_likes" data-url="/2020/05/30/Hexo%E5%86%8D%E5%8A%A0%E9%80%9F/" data-title="Hexo再加速" rel="unlike">
         <i class="icon-heart"></i>
         喜欢
         <i class="leancloud_likes_count" id="leancloud_likes_count">0</i>
@@ -281,7 +301,15 @@
 		</div>
 
 		<div class="article-content" id="article-content">
-				
+			<p>通过Github的Github Page作为博客服务器，然后在腾讯云上购买域名，最后将两者绑定。</p>
+<h1 id="操作流程"><a href="#操作流程" class="headerlink" title="操作流程"></a>操作流程</h1><p>1、注册github账号，假设账号名为XXXX。新建一个仓库，命名为XXXX.github.io（只有当命名为此种格式时，Github才会将其设置为Github Page）;<br>2、 在仓库中添加两个文件CNAME（必须大写且无后缀，CNAME文件是用于设置域名的文件）和index.html（网页主文件）。</p>
+<p>CNAME文件中只需要一行即可。假设域名为xxxx.cn<br>3、在腾讯云上申请域名，选择合适的域名购买后（不同的后缀价格差别较大，如果没有特殊需求，选择最合适的即可，此处申请xxxx.cn）<br>4、实名认证，现在在国内购买的域名都需要实名认证，否则将无法使用。实名认证需要上传身份证照片等等信息。<br>5、配置DNS，确认DNS是解析正常的状态。（一定要保证解释状态是正常解析，否则需要重新设置DNS（等待时间很长，官方说0-72小</p>
+<p><img src="https://raw.githubusercontent.com/SCX-MI/tu-BED/master/20200601002457.png" alt="1"></p>
+<p>6、 添加解析，分别添加两条解析，其格式如下（此处我们统一使用CNAME配置解析，有些博客也推荐A配置（记录值是IP，但是github.io的IP可能会改变，所有不推荐），不是很推荐）</p>
+<p><img src="https://raw.githubusercontent.com/SCX-MI/tu-BED/master/20200601002522.png" alt="2"></p>
+<p>7、设置解析任务后，大概需要等待十分钟就可以正常访问了。</p>
+<p>注意：<br>问题一：是否需要备案？<br>如果仅仅是Github网页做后台，是不用备案的。备案的网站主要是指在中国大陆开展网站服务的网站，由于我们使用的是国外的服务器，所以暂时是不需要备案的。但是依旧要注意网页的使用，避免非法信息的传播。</p>
+	
 		</div>
 		
 		<div id="current-post-cover" data-scr="/img/cart_cover.jpg"></div>
@@ -333,7 +361,8 @@
 								五月 31日, 2020				
 							</p>
 							<p class="relate-post-content">
-								
+								超简单的利用 GitHub + PicGo搭建属于自己的图床1.软件下载地址2.GitHub​          2.1 创建图库​           2.2 获取令牌
+3.本地配置步骤​        3.1 安装配置PicGo​...
 							</p>
 						</div>
 

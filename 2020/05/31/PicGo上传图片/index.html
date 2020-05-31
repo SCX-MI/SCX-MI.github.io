@@ -220,6 +220,19 @@
 		插件作者：KELEN
 		插件来源: https://github.com/KELEN/katelog
 -->
+
+	
+		<div class="layout-toc">
+			<div id="layout-toc">
+				<div class="k-catelog-list" id="catelog-list" data-title="文章目录"></div>
+			</div>
+		</div>
+
+		
+<script src="/plugin/toc/katelog.min.js"></script>
+
+
+		
 	 
 
 <div class="layout-post">
@@ -253,7 +266,14 @@
 
 			</span>
 			<span>
-						
+				
+	<i class="icon-price-tags"></i>
+	
+		<a href="/tags/Hexo/" class=" ">
+			Hexo
+		</a>
+	
+		
 			</span>
 			
 			
@@ -281,7 +301,25 @@
 		</div>
 
 		<div class="article-content" id="article-content">
-				
+			<h1 id="超简单的利用-GitHub-PicGo搭建属于自己的图床"><a href="#超简单的利用-GitHub-PicGo搭建属于自己的图床" class="headerlink" title="超简单的利用 GitHub + PicGo搭建属于自己的图床"></a>超简单的利用 GitHub + PicGo搭建属于自己的图床</h1><h5 id="1-软件下载地址"><a href="#1-软件下载地址" class="headerlink" title="1.软件下载地址"></a>1.软件下载地址</h5><h5 id="2-GitHub"><a href="#2-GitHub" class="headerlink" title="2.GitHub"></a>2.GitHub</h5><p>​          2.1 创建图库<br>​           2.2 获取令牌</p>
+<h5 id="3-本地配置步骤"><a href="#3-本地配置步骤" class="headerlink" title="3.本地配置步骤"></a>3.本地配置步骤</h5><p>​        3.1 安装配置PicGo<br>​        3.2 测试PicGo</p>
+<h1 id="利用-GitHub-PicGo搭建属于自己的图床"><a href="#利用-GitHub-PicGo搭建属于自己的图床" class="headerlink" title="利用 GitHub + PicGo搭建属于自己的图床"></a>利用 GitHub + PicGo搭建属于自己的图床</h1><h3 id="1-软件下载地址-1"><a href="#1-软件下载地址-1" class="headerlink" title="1.软件下载地址"></a>1.软件下载地址</h3><p>PicGo 蓝奏云下载地址：<a href="https://www.lanzous.com/ia49ojg" target="_blank" rel="noopener">PicGo</a></p>
+<p>Typora 官网：<a href="https://typora.io/" target="_blank" rel="noopener">Typora</a></p>
+<h3 id="2-GitHub-1"><a href="#2-GitHub-1" class="headerlink" title="2.GitHub"></a>2.GitHub</h3><h4 id="2-1-创建图库"><a href="#2-1-创建图库" class="headerlink" title="2.1 创建图库"></a>2.1 创建图库</h4><p><img src="https://raw.githubusercontent.com/SCX-MI/tu-BED/master/20200531235634.jpg" alt="1"></p>
+<h4 id="2-2-获取令牌"><a href="#2-2-获取令牌" class="headerlink" title="2.2 获取令牌"></a>2.2 获取令牌</h4><p>大致步骤如下：</p>
+<p>点击自己的 GitHub 头像</p>
+<p>Settings</p>
+<p>Developer settings</p>
+<p>Personal access tokens</p>
+<p>Generate new token</p>
+<p>之后会有这个界面，自己填选，Note注明给谁用，全部勾选<br><img src="https://raw.githubusercontent.com/SCX-MI/tu-BED/master/20200531235626.jpg" alt="2"></p>
+<p>生成token</p>
+<p>此时可以保存备用，也可以在下边用到的时候，再按照上述步骤生成 token 。注意 token 是私密的，需要做好安全保护！</p>
+<h3 id="3-本地配置步骤-1"><a href="#3-本地配置步骤-1" class="headerlink" title="3.本地配置步骤"></a>3.本地配置步骤</h3><h4 id="3-1-安装配置PicGo"><a href="#3-1-安装配置PicGo" class="headerlink" title="3.1 安装配置PicGo"></a>3.1 安装配置PicGo</h4><p>接下来配置 GitHub 作为图床，在左侧找到图床设置，找到GitHub图床。<br>1、前边有星号的为必填项，依次填入之前创建的仓库名，注意是：账户名/仓库名；<br>2、然后填入设定的分支名（创建仓库时如果没有创建其他分支，默认就是 master 分支）；<br>3、最后填入之前生成的 token 令牌，点击确定</p>
+<p><img src="https://raw.githubusercontent.com/SCX-MI/tu-BED/master/20200531235756.jpg" alt="3"></p>
+<p>4、然后找到 PicGo 设置，打开里边的 <strong><em>时间戳重命名</em></strong>，这样可以避免图床在上传文件时，由于文件名相同造成的错误。</p>
+<p>5、然后剩下的配置项可以不用管，参考的文章不建议设置为开机自启，因为等会配置好 typora 后，typora 在上传图片时会自动打开 PicGo 软件。</p>
+	
 		</div>
 		
 		<div id="current-post-cover" data-scr="/img/cart_cover.jpg"></div>
@@ -300,7 +338,7 @@
 		<a id="totop-post-page">返回顶部</a>
 		
 		
-			<a href="/2020/05/27/t/" title="t" rel="next">
+			<a href="/2020/05/30/Hexo%E5%86%8D%E5%8A%A0%E9%80%9F/" title="Hexo再加速" rel="next">
 				下一篇&raquo;
 			</a>
 			
@@ -318,28 +356,6 @@
 <div class="relate-post">
 	
 		<ul>
-			
-					<li>
-						<div class="relate-post-text">
-							<a class="relate-post-title" href="/2020/05/27/t/" title="t">
-								t			
-							</a>
-							<p class="relate-post-date">
-								<i class="fa fa-calendar"></i>
-								五月 27日, 2020				
-							</p>
-							<p class="relate-post-content">
-								
-							</p>
-						</div>
-
-						<div class="relate-post-cover">
-							<a href="/2020/05/27/t/" title="t">				
-								
-								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="t"/>
-							</a>
-						</div>
-					</li>												
 			
 					<li>
 						<div class="relate-post-text">
@@ -409,6 +425,29 @@
 							<a href="/2020/05/19/Hexo%E6%9C%AC%E5%9C%B0%E6%90%AD%E5%BB%BA/" title="Hexo本地搭建">				
 								
 								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="Hexo本地搭建"/>
+							</a>
+						</div>
+					</li>												
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2020/05/30/Hexo%E5%86%8D%E5%8A%A0%E9%80%9F/" title="Hexo再加速">
+								Hexo再加速			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								五月 30日, 2020				
+							</p>
+							<p class="relate-post-content">
+								通过Github的Github Page作为博客服务器，然后在腾讯云上购买域名，最后将两者绑定。
+操作流程1、注册github账号，假设账号名为XXXX。新建一个仓库，命名为XXXX.github.io（只有当命名为此种格式时，Git...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2020/05/30/Hexo%E5%86%8D%E5%8A%A0%E9%80%9F/" title="Hexo再加速">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="Hexo再加速"/>
 							</a>
 						</div>
 					</li>												
