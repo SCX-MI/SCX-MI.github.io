@@ -13,7 +13,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
   <title>
     
-      micro:bit 蓝牙连接 | Hexo
+      micro bit服务功能 | Hexo
     
   </title>
   <meta name="author" content="SCX">
@@ -89,7 +89,7 @@
 	<!-- Page title -->
 	<p>
 		
-			「micro:bit 蓝牙连接」
+			「micro bit服务功能」
 		
 	</p>
 
@@ -239,8 +239,8 @@
 	<div id="layout-post">
 		<div class="article-title">
 			
-	<a href="/2020/06/17/micro-bit-%E8%93%9D%E7%89%99%E8%BF%9E%E6%8E%A5/" itemprop="url">
-		micro:bit 蓝牙连接
+	<a href="/2020/06/18/micro-bit%E6%9C%8D%E5%8A%A1%E5%8A%9F%E8%83%BD/" itemprop="url">
+		micro bit服务功能
 	</a>
 
 		</div>
@@ -256,9 +256,9 @@
 
 	更新于
 
-	<a href="/2020/06/17/micro-bit-%E8%93%9D%E7%89%99%E8%BF%9E%E6%8E%A5/" itemprop="url">
-		<time datetime="2020-06-17T05:21:54.000Z" itemprop="dateUpdated">
-	  		2020-06-17
+	<a href="/2020/06/18/micro-bit%E6%9C%8D%E5%8A%A1%E5%8A%9F%E8%83%BD/" itemprop="url">
+		<time datetime="2020-06-18T06:30:34.000Z" itemprop="dateUpdated">
+	  		2020-06-18
 	  </time>
 	</a> 
 
@@ -279,7 +279,7 @@
 			
 
 	
-    <span class="leancloud_visitors" id="/2020/06/17/micro-bit-%E8%93%9D%E7%89%99%E8%BF%9E%E6%8E%A5/_visitors" data-url="/2020/06/17/micro-bit-%E8%93%9D%E7%89%99%E8%BF%9E%E6%8E%A5/" data-title="micro:bit 蓝牙连接">
+    <span class="leancloud_visitors" id="/2020/06/18/micro-bit%E6%9C%8D%E5%8A%A1%E5%8A%9F%E8%83%BD/_visitors" data-url="/2020/06/18/micro-bit%E6%9C%8D%E5%8A%A1%E5%8A%9F%E8%83%BD/" data-title="micro bit服务功能">
        	<i class="icon-eye"></i>
        	热度
         
@@ -291,7 +291,7 @@
 
 
 	
-    <span class="leancloud_likes" id="/2020/06/17/micro-bit-%E8%93%9D%E7%89%99%E8%BF%9E%E6%8E%A5/_likes" data-url="/2020/06/17/micro-bit-%E8%93%9D%E7%89%99%E8%BF%9E%E6%8E%A5/" data-title="micro:bit 蓝牙连接" rel="unlike">
+    <span class="leancloud_likes" id="/2020/06/18/micro-bit%E6%9C%8D%E5%8A%A1%E5%8A%9F%E8%83%BD/_likes" data-url="/2020/06/18/micro-bit%E6%9C%8D%E5%8A%A1%E5%8A%9F%E8%83%BD/" data-title="micro bit服务功能" rel="unlike">
         <i class="icon-heart"></i>
         喜欢
         <i class="leancloud_likes_count" id="leancloud_likes_count">0</i>
@@ -301,39 +301,25 @@
 		</div>
 	
 		<div class="article-content" id="article-content">
-			<h1 id="Micro-bit开发板与网页蓝牙的连接"><a href="#Micro-bit开发板与网页蓝牙的连接" class="headerlink" title="Micro bit开发板与网页蓝牙的连接"></a><strong>Micro bit开发板与网页蓝牙的连接</strong></h1><h2 id="与网页蓝牙连接准备工作"><a href="#与网页蓝牙连接准备工作" class="headerlink" title="与网页蓝牙连接准备工作"></a>与网页蓝牙连接准备工作</h2><ol>
-<li><p>检查电脑系统的版本：WIN10 版本1703及以上。</p>
-</li>
-<li><p>检查电脑是否支持蓝牙功能：WIN10系统右下角图标栏中有显示。</p>
-<p><img src="https://raw.githubusercontent.com/SCX-MI/tu-BED/master/20200617134256.png" alt="5"></p>
-</li>
-<li><p>micro bit开发版需要固件来驱动，简单来说就是“驱动”。</p>
-</li>
-<li><p>检查Chrome浏览器版本，在这里建议大家使用最新的版本。</p>
-</li>
-</ol>
-<h2 id="连接"><a href="#连接" class="headerlink" title="连接"></a>连接</h2><p>网页蓝牙的连接离不开代码的支持，在这里建议大家下载：Visual  Studio Code软件来编写程序。</p>
-<p>网页蓝牙的连接需要具备最基础的三个功能，一是：连接蓝牙；二：断开蓝牙连接；三：显示蓝牙连接状态。</p>
-<p>要想使上述功能的实现，我们在WEB的body标签中 写入两个h2级别的名称。</p>
-<p><img src="https://raw.githubusercontent.com/SCX-MI/tu-BED/master/20200617135804.png" alt="6"></p>
-<p>从团中我们可以发现两个h2级别，分别代表连接状态，与设备连接与断开功能。</p>
-<p>下面我们就从设被连接功能开始：</p>
-<h5 id="扫描"><a href="#扫描" class="headerlink" title="扫描"></a>扫描</h5><p>开发板要被连接就自然少不了网页蓝牙能够发现设备这段代码</p>
-<p><img src="https://raw.githubusercontent.com/SCX-MI/tu-BED/master/20200617140322.png" alt="7"></p>
-<p>图是发现设备的函数，本段代码一共分为2部分一部分是扫描设备连接获取设备的信息，为连接（connect），下一部分则是连接失败，会显示的信息。</p>
-<h5 id="连接设备"><a href="#连接设备" class="headerlink" title="连接设备"></a>连接设备</h5><p>设备在扫描完后，我们就要对设备进行连接</p>
-<p><img src="https://raw.githubusercontent.com/SCX-MI/tu-BED/master/20200617141114.png" alt="8"></p>
-<p>图中包含连接设备信息，连接以后网页需要显示蓝牙连接状态分别：true,false两种状态。连接成功后连接状态为true,另一种与其相反。</p>
-<p>连接成功后开发板会显示”C”。</p>
-<p><img src="https://raw.githubusercontent.com/SCX-MI/tu-BED/master/20200617142725.png" alt="4"></p>
-<p>网页是：</p>
-<p><img src="https://raw.githubusercontent.com/SCX-MI/tu-BED/master/20200617142928.png" alt="1"></p>
-<h5 id="连接状态的显示"><a href="#连接状态的显示" class="headerlink" title="连接状态的显示"></a>连接状态的显示</h5><p><img src="https://raw.githubusercontent.com/SCX-MI/tu-BED/master/20200617142026.png" alt="9"></p>
-<h5 id="断开连接"><a href="#断开连接" class="headerlink" title="断开连接"></a>断开连接</h5><p>断开连接的实现，可以直接在连接功能中实现，这里我们为了将程序更直观化，我们选择在利益模块中实现连接断开。</p>
-<p><img src="https://raw.githubusercontent.com/SCX-MI/tu-BED/master/20200617142138.png" alt="10"></p>
-<p>这个过程我们使用了if…else…语句来实现我们断开设备与网页蓝牙的连接。当我们断开设备与网络蓝牙的连接以后，会有一下情况：</p>
-<p><img src="https://raw.githubusercontent.com/SCX-MI/tu-BED/master/20200617142555.png" alt="3"></p>
-<p>网页会显示：<img src="https://raw.githubusercontent.com/SCX-MI/tu-BED/master/20200617142546.png" alt="2"></p>
+			<p>我们要开发micro bit开发板那么问题就来了，我们如何对其进行开发呢。这里就要介绍micro bit开发板的服务功能。</p>
+<h2 id="服务-特性"><a href="#服务-特性" class="headerlink" title="服务 特性"></a>服务 特性</h2><p>板子上具有5*5的LED矩阵，如果我们遥控板子的小灯，那就我们板子使用板子的服务、特性功能。</p>
+<p>我们使用谷歌浏览器自带的网页蓝牙来连接我们的开发板我们会发现一下现象：</p>
+<p><img src="https://raw.githubusercontent.com/SCX-MI/tu-BED/master/20200618144031.png" alt="1"></p>
+<p>图中我们看了蓝色区域不同的services,下面有不同的序列号，这里面有一个专有名词：uuid。uuid代表着services具有不同的功能，我们根据我们个人的需求来选择uuid。</p>
+<p>特性：是指一个服务里面，具有不同的功能使用，选择根据个人使用时候需求。</p>
+<p>关于服务，特性的使用有一个网址</p>
+<p>我们使用服务，特性就自然·需要给其加上一段代码：</p>
+<p>我们先将其在页面显示的东西准备好。</p>
+<p><img src="https://raw.githubusercontent.com/SCX-MI/tu-BED/master/20200618150221.png" alt="2"></p>
+<p>接着将我们所需要的服务序列号写入我们程序中为我们使用作准备。</p>
+<p><img src="https://raw.githubusercontent.com/SCX-MI/tu-BED/master/20200618150216.png" alt="3"></p>
+<p>然后写入我们的服务代码，与特性代码。</p>
+<p><img src="https://raw.githubusercontent.com/SCX-MI/tu-BED/master/20200618150118.png" alt="4"></p>
+<p><img src="https://raw.githubusercontent.com/SCX-MI/tu-BED/master/20200618150156.png" alt="5"></p>
+<p><img src="https://raw.githubusercontent.com/SCX-MI/tu-BED/master/20200618150244.png" alt="6"></p>
+<p>最后我们；启动chrome浏览器 来测试我们，是否成功：</p>
+<p><img src="https://raw.githubusercontent.com/SCX-MI/tu-BED/master/20200618150504.png" alt="7"></p>
+<p>图中我们看到Service所对应的号，才代表我们代码正确。</p>
 	
 		</div>
 		
@@ -352,12 +338,8 @@
 	<span>
 		<a id="totop-post-page">返回顶部</a>
 		
-			<a href="/2020/06/18/micro-bit%E6%9C%8D%E5%8A%A1%E5%8A%9F%E8%83%BD/" title="micro bit服务功能" rel="prev">
-				&laquo;上一篇
-			</a>
 		
-		
-			<a href="/2020/05/31/PicGo%E4%B8%8A%E4%BC%A0%E5%9B%BE%E7%89%87/" title="PicGo上传图片" rel="next">
+			<a href="/2020/06/17/micro-bit-%E8%93%9D%E7%89%99%E8%BF%9E%E6%8E%A5/" title="micro:bit 蓝牙连接" rel="next">
 				下一篇&raquo;
 			</a>
 			
@@ -378,24 +360,28 @@
 			
 					<li>
 						<div class="relate-post-text">
-							<a class="relate-post-title" href="/2020/06/18/micro-bit%E6%9C%8D%E5%8A%A1%E5%8A%9F%E8%83%BD/" title="micro bit服务功能">
-								micro bit服务功能			
+							<a class="relate-post-title" href="/2020/06/17/micro-bit-%E8%93%9D%E7%89%99%E8%BF%9E%E6%8E%A5/" title="micro:bit 蓝牙连接">
+								micro:bit 蓝牙连接			
 							</a>
 							<p class="relate-post-date">
 								<i class="fa fa-calendar"></i>
-								六月 18日, 2020				
+								六月 17日, 2020				
 							</p>
 							<p class="relate-post-content">
-								我们要开发micro bit开发板那么问题就来了，我们如何对其进行开发呢。这里就要介绍micro bit开发板的服务功能。
-服务 特性板子上具有5*5的LED矩阵，如果我们遥控板子的小灯，那就我们板子使用板子的服务、特性功能。
-我们使...
+								Micro bit开发板与网页蓝牙的连接与网页蓝牙连接准备工作
+检查电脑系统的版本：WIN10 版本1703及以上。
+
+检查电脑是否支持蓝牙功能：WIN10系统右下角图标栏中有显示。
+
+
+micro bit开发版需要固件来驱动，简单来...
 							</p>
 						</div>
 
 						<div class="relate-post-cover">
-							<a href="/2020/06/18/micro-bit%E6%9C%8D%E5%8A%A1%E5%8A%9F%E8%83%BD/" title="micro bit服务功能">				
+							<a href="/2020/06/17/micro-bit-%E8%93%9D%E7%89%99%E8%BF%9E%E6%8E%A5/" title="micro:bit 蓝牙连接">				
 								
-								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover1.jpg" alt="micro bit服务功能"/>
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover1.jpg" alt="micro:bit 蓝牙连接"/>
 							</a>
 						</div>
 					</li>												

@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>micro bit服务功能</title>
+      <link href="/2020/06/18/micro-bit%E6%9C%8D%E5%8A%A1%E5%8A%9F%E8%83%BD/"/>
+      <url>/2020/06/18/micro-bit%E6%9C%8D%E5%8A%A1%E5%8A%9F%E8%83%BD/</url>
+      
+        <content type="html"><![CDATA[<p>我们要开发micro bit开发板那么问题就来了，我们如何对其进行开发呢。这里就要介绍micro bit开发板的服务功能。</p><h2 id="服务-特性"><a href="#服务-特性" class="headerlink" title="服务 特性"></a>服务 特性</h2><p>板子上具有5*5的LED矩阵，如果我们遥控板子的小灯，那就我们板子使用板子的服务、特性功能。</p><p>我们使用谷歌浏览器自带的网页蓝牙来连接我们的开发板我们会发现一下现象：</p><p><img src="https://raw.githubusercontent.com/SCX-MI/tu-BED/master/20200618144031.png" alt="1"></p><p>图中我们看了蓝色区域不同的services,下面有不同的序列号，这里面有一个专有名词：uuid。uuid代表着services具有不同的功能，我们根据我们个人的需求来选择uuid。</p><p>特性：是指一个服务里面，具有不同的功能使用，选择根据个人使用时候需求。</p><p>关于服务，特性的使用有一个网址</p><p>我们使用服务，特性就自然·需要给其加上一段代码：</p><p>我们先将其在页面显示的东西准备好。</p><p><img src="https://raw.githubusercontent.com/SCX-MI/tu-BED/master/20200618150221.png" alt="2"></p><p>接着将我们所需要的服务序列号写入我们程序中为我们使用作准备。</p><p><img src="https://raw.githubusercontent.com/SCX-MI/tu-BED/master/20200618150216.png" alt="3"></p><p>然后写入我们的服务代码，与特性代码。</p><p><img src="https://raw.githubusercontent.com/SCX-MI/tu-BED/master/20200618150118.png" alt="4"></p><p><img src="https://raw.githubusercontent.com/SCX-MI/tu-BED/master/20200618150156.png" alt="5"></p><p><img src="https://raw.githubusercontent.com/SCX-MI/tu-BED/master/20200618150244.png" alt="6"></p><p>最后我们；启动chrome浏览器 来测试我们，是否成功：</p><p><img src="https://raw.githubusercontent.com/SCX-MI/tu-BED/master/20200618150504.png" alt="7"></p><p>图中我们看到Service所对应的号，才代表我们代码正确。</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> micro bit </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>micro:bit 蓝牙连接</title>
       <link href="/2020/06/17/micro-bit-%E8%93%9D%E7%89%99%E8%BF%9E%E6%8E%A5/"/>
       <url>/2020/06/17/micro-bit-%E8%93%9D%E7%89%99%E8%BF%9E%E6%8E%A5/</url>
