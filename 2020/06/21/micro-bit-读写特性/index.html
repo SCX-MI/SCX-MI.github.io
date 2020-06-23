@@ -13,7 +13,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
   <title>
     
-      Hello World | Hexo
+      micro bit 读写特性 | Hexo
     
   </title>
   <meta name="author" content="SCX">
@@ -89,7 +89,7 @@
 	<!-- Page title -->
 	<p>
 		
-			「Hello World」
+			「micro bit 读写特性」
 		
 	</p>
 
@@ -239,8 +239,8 @@
 	<div id="layout-post">
 		<div class="article-title">
 			
-	<a href="/2020/03/04/hello-world/" itemprop="url">
-		Hello World
+	<a href="/2020/06/21/micro-bit-%E8%AF%BB%E5%86%99%E7%89%B9%E6%80%A7/" itemprop="url">
+		micro bit 读写特性
 	</a>
 
 		</div>
@@ -256,9 +256,9 @@
 
 	更新于
 
-	<a href="/2020/03/04/hello-world/" itemprop="url">
-		<time datetime="2020-03-04T01:18:55.481Z" itemprop="dateUpdated">
-	  		2020-03-04
+	<a href="/2020/06/21/micro-bit-%E8%AF%BB%E5%86%99%E7%89%B9%E6%80%A7/" itemprop="url">
+		<time datetime="2020-06-21T11:03:58.000Z" itemprop="dateUpdated">
+	  		2020-06-23
 	  </time>
 	</a> 
 
@@ -266,13 +266,20 @@
 
 			</span>
 			<span>
-						
+				
+	<i class="icon-price-tags"></i>
+	
+		<a href="/tags/micro-bit/" class=" ">
+			micro bit
+		</a>
+	
+		
 			</span>
 			
 			
 
 	
-    <span class="leancloud_visitors" id="/2020/03/04/hello-world/_visitors" data-url="/2020/03/04/hello-world/" data-title="Hello World">
+    <span class="leancloud_visitors" id="/2020/06/21/micro-bit-%E8%AF%BB%E5%86%99%E7%89%B9%E6%80%A7/_visitors" data-url="/2020/06/21/micro-bit-%E8%AF%BB%E5%86%99%E7%89%B9%E6%80%A7/" data-title="micro bit 读写特性">
        	<i class="icon-eye"></i>
        	热度
         
@@ -284,7 +291,7 @@
 
 
 	
-    <span class="leancloud_likes" id="/2020/03/04/hello-world/_likes" data-url="/2020/03/04/hello-world/" data-title="Hello World" rel="unlike">
+    <span class="leancloud_likes" id="/2020/06/21/micro-bit-%E8%AF%BB%E5%86%99%E7%89%B9%E6%80%A7/_likes" data-url="/2020/06/21/micro-bit-%E8%AF%BB%E5%86%99%E7%89%B9%E6%80%A7/" data-title="micro bit 读写特性" rel="unlike">
         <i class="icon-heart"></i>
         喜欢
         <i class="leancloud_likes_count" id="leancloud_likes_count">0</i>
@@ -294,19 +301,22 @@
 		</div>
 	
 		<div class="article-content" id="article-content">
-			<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+			<h1 id="micro-bit-LED特性进行读写"><a href="#micro-bit-LED特性进行读写" class="headerlink" title="micro bit  LED特性进行读写"></a>micro bit  LED特性进行读写</h1><p>我们这节就利用LED小灯，来介绍，网页蓝牙的读写功能</p>
+<p>在micro bit中，有些特性是可读，有些特性是可写，有些是，可读可写。这里我们利用LED小灯，来对LED特性就行读写功能。</p>
+<p>我们先来进行写功能的代码编辑：</p>
+<p><img src="https://raw.githubusercontent.com/SCX-MI/tu-BED/master/20200623093806.png" alt="1"></p>
+<p>这里我们先给读特性在网页上建立一块操作栏。</p>
+<p>接着我要进行读功能的代码编写：</p>
+<p><img src="https://raw.githubusercontent.com/SCX-MI/tu-BED/master/20200623093759.png" alt="2"></p>
+<p>这段代码又来匹配开发板上的服务特性。</p>
+<p><img src="https://raw.githubusercontent.com/SCX-MI/tu-BED/master/20200623093752.png" alt="3"></p>
+<p>这段代码是开发板读功能的具体实现。</p>
+<p>接着我们利用LED小灯，来进行写功能的介绍。</p>
+<p><img src="https://raw.githubusercontent.com/SCX-MI/tu-BED/master/20200623093958.png" alt="4"></p>
+<p>这个是匹配开发板LED小灯的特性。</p>
+<p><img src="https://raw.githubusercontent.com/SCX-MI/tu-BED/master/20200623093948.png" alt="5"></p>
+<p>这个是对LED小灯就行写，改变小灯的亮灭。</p>
+<p>我们将代码在谷歌运行按下Fn+F12就可以显示代码的具体步骤。</p>
 	
 		</div>
 		
@@ -325,10 +335,10 @@
 	<span>
 		<a id="totop-post-page">返回顶部</a>
 		
-			<a href="/2020/05/19/Hexo%E6%9C%AC%E5%9C%B0%E6%90%AD%E5%BB%BA/" title="Hexo本地搭建" rel="prev">
-				&laquo;上一篇
-			</a>
 		
+			<a href="/2020/06/18/micro-bit%E6%9C%8D%E5%8A%A1%E5%8A%9F%E8%83%BD/" title="micro bit服务功能" rel="next">
+				下一篇&raquo;
+			</a>
 			
 	</span>
 
@@ -344,30 +354,6 @@
 <div class="relate-post">
 	
 		<ul>
-			
-					<li>
-						<div class="relate-post-text">
-							<a class="relate-post-title" href="/2020/06/21/micro-bit-%E8%AF%BB%E5%86%99%E7%89%B9%E6%80%A7/" title="micro bit 读写特性">
-								micro bit 读写特性			
-							</a>
-							<p class="relate-post-date">
-								<i class="fa fa-calendar"></i>
-								六月 21日, 2020				
-							</p>
-							<p class="relate-post-content">
-								micro bit  LED特性进行读写我们这节就利用LED小灯，来介绍，网页蓝牙的读写功能
-在micro bit中，有些特性是可读，有些特性是可写，有些是，可读可写。这里我们利用LED小灯，来对LED特性就行读写功能。
-我们先来进行...
-							</p>
-						</div>
-
-						<div class="relate-post-cover">
-							<a href="/2020/06/21/micro-bit-%E8%AF%BB%E5%86%99%E7%89%B9%E6%80%A7/" title="micro bit 读写特性">				
-								
-								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover1.jpg" alt="micro bit 读写特性"/>
-							</a>
-						</div>
-					</li>												
 			
 					<li>
 						<div class="relate-post-text">
@@ -535,6 +521,28 @@ micro bit开发版需要固件来驱动，简单来...
 							<a href="/2020/05/19/Hexo%E6%9C%AC%E5%9C%B0%E6%90%AD%E5%BB%BA/" title="Hexo本地搭建">				
 								
 								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover1.jpg" alt="Hexo本地搭建"/>
+							</a>
+						</div>
+					</li>												
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2020/03/04/hello-world/" title="Hello World">
+								Hello World			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								三月 4日, 2020				
+							</p>
+							<p class="relate-post-content">
+								Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using ...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2020/03/04/hello-world/" title="Hello World">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover1.jpg" alt="Hello World"/>
 							</a>
 						</div>
 					</li>												
