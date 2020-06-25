@@ -13,7 +13,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
   <title>
     
-      tag: hexo | Hexo
+      文章归档 | Hexo
     
   </title>
   <meta name="author" content="SCX">
@@ -89,7 +89,7 @@
 	<!-- Page title -->
 	<p>
 		
-			标签
+			文章归档
 		
 	</p>
 
@@ -220,16 +220,17 @@
 	Thec counter of post number  for archive.ejs.  
 -->
 
-		 
 	
-	hexo 1 
-		
+	总计 12 文章
+	
 
 		</i>
     </div>
 
     <!-- Archive by year, display in page( archive ) -->
     <div id="layout-archive-year" style="display: 
+                 	
+            block">        
         
         
         <ul>
@@ -428,7 +429,7 @@
      <!-- Archive by month, called by page( categories, tags... ) -->
     <div id="layout-archive-month" style="display: 
          
-            block"> 
+            none"> 
         
 
         
@@ -447,29 +448,49 @@
 
             <ul>
                 <li>
-                    <a href="/2020/05/30/Hexo%E5%86%8D%E5%8A%A0%E9%80%9F/">
+                    <a href="/2020/05/19/Hexo%E6%9C%AC%E5%9C%B0%E6%90%AD%E5%BB%BA/">
                         <em>
-                            05-30
+                            05-19
                         </em>
                         <span itemprop="name">
-                            Hexo再加速
+                            Hexo本地搭建
                         </span>
                         
-                            <a href="/tags/hexo/" class="tag">
-                                hexo
+                            <a href="/tags/Hexo/" class="tag">
+                                Hexo
                             </a>
                                
                     </a>
                 </li>
             </ul>
         
-    </div>
+            
 
-    
+            
+                
+                <h3 class="archive-year">
+                    <!-- <a href="/archives/2020/03"> -->
+                    <a>
+                        2020 - 03
+                    </a>
+                </h3>
+            
+
+            <ul>
+                <li>
+                    <a href="/2020/03/04/hello-world/">
+                        <em>
+                            03-04
+                        </em>
+                        <span itemprop="name">
+                            Hello World
+                        </span>
+                               
+                    </a>
+                </li>
+            </ul>
         
-	
-
-	
+    </div>
 
     
 </div>
@@ -626,94 +647,6 @@
 				https://hoxis.github.io/hexo-next-read-rank.html（Author：hoxis）
 			04-likes相关的函数，
 				参考了01 & 02进行简单的设计与实现
--->
-
-
-  
-<script src="/plugin/leancloud/av-min.js"></script>
-<script src="/js/leancloud-count.js"></script>
-
-
-	
-
-  
-
-	<!--
-	时间：2018-10-3
-	描述：
-		插件名称：hexo-generator-search-zip
-		插件来源: https://github.com/SuperKieran/hexo-generator-search-zip
-		代码参考：https://github.com/SuperKieran/TKL/blob/master/layout/_partial/search.ejs(Include: js & css)	
--->
-<div class="popup search-popup local-search-popup scrollbar" >
-	<div class="local-search-container">
-		<span class="popup-btn-close">
-      		ESC
-   		</span>
-		<div class="local-search-header">
-			<div class="input-prompt">				
-			</div>
-			<input autocomplete="off" placeholder="Search..." type="text" id="local-search-input">
-		</div>
-		<div class="local-search-body">
-			<div id="local-search-output"></div>
-		</div>
-		<div class="local-search-footer">
-			<div class="topN-post">				
-				
-
-   
-	<div id="topN">
-		<div class="topN-title" data-title= "热门文章"></div> 
-	</div>
-	
-    <script>
-        var limitCount = 10;
-        if( $('#topN').length ){
-            setTimeout(function() {
-                topNPost(limitCount);
-			}, 3000);
-        }
-    </script>
-   
-								
-			</div>
-		</div>
-	</div>
-</div>
-
-
-<script src="/plugin/search/ziploader.js"></script>
-<script src="/js/search.js"></script>
-
-
-<script type="text/javascript">
-	var search_path = 'search.xml',
-		zip_Path = '/',
-		version_Path = '/',
-		input_Trigger = '',
-		top_N = '';
-
-	themeLocalSearch({
-		search_path, 
-		zip_Path, 
-		version_Path, 
-		input_Trigger, 
-		top_N
-	});
-</script>
-
-
-
-<script src="/plugin/chinese/chinese.js"></script>
-<script src="/plugin/imagelazyloader/yall.min.js"></script>
-<script src="/plugin/imageloaded/imagesloaded.pkgd.min.js"></script>
-<script src="/plugin/nicescroll/jquery.nicescroll.js"></script>
-<script src="/plugin/resizediv/resizediv.js"></script>
-<script src="/js/main.js"></script>
-
-	</body>	
-</html>实现
 -->
 
 
